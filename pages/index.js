@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { fetchEntries } from '@utils/contentfulPosts'
+import { fetchNewPosts } from '@utils/contentfulPosts'
 
 import Header from '@components/Header'
 import Footer from '@components/Footer'
@@ -10,7 +10,7 @@ export default function Home({ posts }) {
   return (
     <div className="container">
       <Head>
-        <title>Next + Contentful Starter</title>
+        <title>Fchan</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -18,7 +18,7 @@ export default function Home({ posts }) {
         <Header />
         <div className="posts">
           {posts.map((p) => {
-            return <Post key={p.date} date={p.date} image={p.image.fields} title={p.title} />
+            return <Post key={p.date} pid={p.pid} date={p.date} category={p.category} body={p.body} title={p.title} />
           })}
         </div>
       </main>
@@ -32,6 +32,7 @@ export default function Home({ posts }) {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          background: #262230;
         }
 
         main {
@@ -44,7 +45,8 @@ export default function Home({ posts }) {
         }
 
         .posts {
-          display: flex;
+          display: grid;
+          grid-template-columns: auto;
         }
       `}</style>
 
@@ -53,6 +55,7 @@ export default function Home({ posts }) {
         body {
           padding: 0;
           margin: 0;
+          color: #e0e0e0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
             Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         }
@@ -66,7 +69,7 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetchEntries()
+  const res = await fetchNewPosts()
   const posts = await res.map((p) => {
     return p.fields
   })

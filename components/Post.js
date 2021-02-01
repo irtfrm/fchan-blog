@@ -1,62 +1,63 @@
-function Post({ date, image, title }) {
-  let { file, description } = image
+import Link from 'next/link'
+import Folder from './icons/Folder'
 
+function Post({ pid, date, category, body, title }) {
   return (
+    <Link href={"/posts/"+pid}>
     <div className="post">
-      <img alt={description} src={`https:${file.url}`} />
-      <div className="description">{description}</div>
       <div className="text">
         <h2>{title}</h2>
-        <h3>{date.substring(0, 10)}</h3>
+        <p>{body.content[0].content[0].value}</p>
+        <div className="info">
+          <span>
+            {date.substring(0, 10)}
+          </span>
+          <span className="center-dot">&middot;</span>
+          <span> 
+            <Folder/>
+            {category}
+          </span>
+        </div>
+        
       </div>
 
       <style jsx>{`
         .post {
           position: relative;
           margin: 10px;
-          width: 300px;
-          color: white;
+          width: 500px;
+          height: 20vh;
           cursor: pointer;
-        }
-        .description {
-          position: absolute;
-          top: 0;
-          padding: 10px;
-          box-sizing: border-box;
-          background: linear-gradient(0deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 100%);
-          height: 100px;
-          opacity: 0;
-          transition: opacity 0.5s;
-        }
-        .post:hover .description {
-          opacity: 1;
+          background: #323242;
+          border-radius: 2px;
         }
         .text {
           position: absolute;
-          bottom: 3px;
           padding: 10px;
           box-sizing: border-box;
           width: 100%;
-          height: 70px;
-          background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0) 100%);
+          height: 80px;
         }
         h2,
-        h3 {
+        .info,
+        p {
           margin: 5px;
         }
         h2 {
           margin-bottom: 0;
         }
-        h3 {
+        .info {
           margin-top: 0;
           font-size: 0.8em;
-          font-weight: 400;
+          color: #9aa6bb;
         }
-        img {
-          max-width: 300px;
+        .center-dot {
+          text-align: center;
+          margin: 0 1em;
         }
       `}</style>
     </div>
+    </Link>
   )
 }
 

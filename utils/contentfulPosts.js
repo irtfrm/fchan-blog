@@ -6,10 +6,30 @@ const client = require('contentful').createClient({
   accessToken: accessToken,
 })
 
-export async function fetchEntries() {
-  const entries = await client.getEntries()
-  if (entries.items) return entries.items
+export async function fetchPosts() {
+  const posts = await client.getEntries({content_type: "posts"});
+  if (posts.items) return posts.items
   console.log(`Error getting Entries for ${contentType.name}.`)
 }
 
-export default { fetchEntries }
+export async function fetchNewPosts() {
+  const posts = await client.getEntries({
+    content_type: "posts",
+    order: "-sys.createdAt"
+  });
+  if (posts.items) return posts.items
+  console.log(`Error getting Entries for ${contentType.name}.`)
+}
+
+export async function fetchPostByPid(pid) {
+  const entries = await client.getEntries({
+    content_type: "posts",
+    limit: 1,
+    "fields.pid": pid,
+  });
+  if (entries.items) {
+    return entries.items[0];
+  }
+  console.log(`Error getting Entries for ${contentType.name}.`);
+}
+
