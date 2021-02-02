@@ -16,11 +16,11 @@ export default function Home({ posts }) {
 
       <main>
         <Header />
-        <div className="posts">
+
           {posts.map((p) => {
             return <Post key={p.date} pid={p.pid} date={p.date} category={p.category} body={p.body} title={p.title} />
           })}
-        </div>
+
       </main>
 
       <Footer />
@@ -36,18 +36,14 @@ export default function Home({ posts }) {
         }
 
         main {
-          padding: 5rem 0;
+          padding: 3rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          //justify-content: center;
           align-items: center;
         }
 
-        .posts {
-          display: grid;
-          grid-template-columns: auto;
-        }
       `}</style>
 
       <style jsx global>{`

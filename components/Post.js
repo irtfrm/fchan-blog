@@ -25,8 +25,8 @@ function Post({ pid, date, category, body, title }) {
         .post {
           position: relative;
           margin: 10px;
-          width: 500px;
-          height: 20vh;
+          width: 600px;
+          min-height: 20vh;
           cursor: pointer;
           background: #323242;
           border-radius: 2px;
@@ -36,7 +36,7 @@ function Post({ pid, date, category, body, title }) {
           padding: 10px;
           box-sizing: border-box;
           width: 100%;
-          height: 80px;
+          min-height: 80px;
         }
         h2,
         .info,
