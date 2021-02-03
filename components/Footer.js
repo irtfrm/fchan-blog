@@ -8,15 +8,10 @@ export default function Footer() {
         footer {
           width: 100%;
           height: 86px;
-          //border-top: 1px solid #eaeaea;
+          font-size: 86%;
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-
-        .logo {
-          height: 1em;
-          margin: 5px;
         }
       `}</style>
     </>

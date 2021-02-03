@@ -8,7 +8,7 @@ export default function Folder(){
             <style jsx>{
                 `svg{
                     fill: currentColor;
-                    vertical-align: bottom;
+                    vertical-align: -0.25em;
                     margin-right: 0.25em;
                 }`
             }</style>

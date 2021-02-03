@@ -1,3 +1,19 @@
 .title {
     font-weight: bold;
 }
+
+.icon {
+    color: inherit;
+    margin: 0 7px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .15s;
+}
+
+.icon:hover {
+    text-decoration: underline;
+}
+
+.icon-container {
+    display: inline;
+}

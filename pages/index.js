@@ -27,20 +27,19 @@ export default function Home({ posts }) {
 
       <style jsx>{`
         .container {
-          height: 100vh;
+          min-height: 100vh;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          background: #262230;
+          background: #262330;
         }
 
         main {
           padding: 3rem 0;
-          flex: 1;
+          //flex: 1;
           display: flex;
           flex-direction: column;
-          //justify-content: center;
           align-items: center;
         }
 
@@ -51,7 +50,8 @@ export default function Home({ posts }) {
         body {
           padding: 0;
           margin: 0;
-          color: #e0e0e0;
+          color: #dce4e1;
+          line-height: 1.9;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
             Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         }

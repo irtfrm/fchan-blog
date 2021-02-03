@@ -3,10 +3,9 @@ import Folder from './icons/Folder'
 
 function Post({ pid, date, category, body, title }) {
   return (
-    <Link href={"/posts/"+pid}>
     <div className="post">
       <div className="text">
-        <h2>{title}</h2>
+      <Link href={"/posts/"+pid}><h2>{title}</h2></Link>
         <p>{body.content[0].content[0].value}</p>
         <div className="info">
           <span>
@@ -26,30 +25,31 @@ function Post({ pid, date, category, body, title }) {
           position: relative;
           margin: 10px;
           width: 600px;
-          min-height: 20vh;
-          cursor: pointer;
-          background: #323242;
           border-radius: 2px;
+          transition: .2s;
         }
         .text {
-          position: absolute;
-          padding: 10px;
+          padding: 10px 0 0;
           box-sizing: border-box;
           width: 100%;
-          min-height: 80px;
         }
         h2,
         .info,
         p {
-          margin: 5px;
+          margin: 8px 5px;
         }
         h2 {
           margin-bottom: 0;
+          cursor: pointer;
+          line-height: 1.6;
+        }
+        h2:hover {
+          text-decoration: underline;
         }
         .info {
           margin-top: 0;
           font-size: 0.8em;
-          color: #9aa6bb;
+          color: #9aafb4;
         }
         .center-dot {
           text-align: center;
@@ -57,7 +57,6 @@ function Post({ pid, date, category, body, title }) {
         }
       `}</style>
     </div>
-    </Link>
   )
 }
 
