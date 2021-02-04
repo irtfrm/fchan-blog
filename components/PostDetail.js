@@ -123,6 +123,11 @@ function PostDetail({ pid, date, category, body, title }) {
           text-align: center;
           margin: 0 1em;
         }
+        @media screen and (max-width: 700px){
+          .post {
+            width: 95vw;
+          }
+        }
       `}</style>
     </div>
   )
