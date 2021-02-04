@@ -8,7 +8,7 @@ export default function PostPage({ post }) {
   return (
     <div className="container">
       <Head>
-        <title>Fchan</title>
+        <title>{post.title} - fchan.dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

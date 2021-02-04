@@ -10,7 +10,7 @@ export default function Home({ posts }) {
   return (
     <div className="container">
       <Head>
-        <title>Fchan</title>
+        <title>fchan.dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
