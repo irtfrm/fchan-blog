@@ -11,7 +11,7 @@ export default function Home({ posts }) {
     <div className="container">
       <Head>
         <title>fchan.dev</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
       </Head>
 
       <main>

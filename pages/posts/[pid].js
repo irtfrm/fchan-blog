@@ -9,7 +9,7 @@ export default function PostPage({ post }) {
     <div className="container">
       <Head>
         <title>{post.title} - fchan.dev</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Head>
 
       <main>
