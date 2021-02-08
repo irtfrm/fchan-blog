@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Folder from './icons/Folder'
+import { PostContent } from './PostContent';
 
 function parseBody(body) {
   if (body.nodeType==='text'){
@@ -69,7 +70,7 @@ function parseBody(body) {
   console.log("Unknown Node Type ",body)
   return res;
 }
-function PostDetail({ pid, date, category, body, title }) {
+function PostDetail({ pid, date, category, body, title, content }) {
   return (
     <div className="post">
       <div className="text">
@@ -84,7 +85,7 @@ function PostDetail({ pid, date, category, body, title }) {
             {category}
           </span>
         </div>
-        {parseBody(body)}
+        <PostContent content={content}/>
       </div>
 
       <style jsx>{`

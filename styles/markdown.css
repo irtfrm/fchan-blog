@@ -1,0 +1,67 @@
+.markdown h1 {
+  margin: 0.9em 5px 0em;
+  font-size: 180%;
+}
+
+.markdown code {
+  border-radius: 2px;
+  color: #ce9178;
+  font-family: Monaco, Consolas, "Courier New", "Meiryo", "Osaka-Mono",
+    monospace;
+  font-size: 80%;
+}
+
+:not(pre)>code {
+  background: #1e1e1e;
+  border: 1px solid #37393a;
+  margin: 0 0.3em;
+  padding: 0 0.25em;
+}
+
+.markdown strong {
+  font-weight: bold;
+}
+.markdown em {
+  font-style: italic;
+}
+.markdown u {
+  text-decoration: underline;
+}
+
+.markdown p {
+  margin: 0.5em 5px;
+}
+.markdown a {
+  color: #72c1e0;
+  text-decoration: none;
+  font-weight: bold;
+}
+.markdown a:hover {
+  text-decoration: underline;
+}
+.markdown :is(h1, h2, h3, h4, h5, h6) {
+  line-height: 1.25;
+  font-weight: bold;
+}
+.markdown h1 {
+  margin: 0.9em 5px 0em;
+  font-size: 180%;
+}
+.markdown h2 {
+  margin: 0.75em 5px 0em;
+  font-size: 155%;
+}
+.markdown h3 {
+  margin: 0.5em 5px 0em;
+  font-size: 134%;
+}
+.markdown h4 {
+  margin: 0.5em 5px 0em;
+  font-size: 115%;
+}
+.markdown blockquote {
+  border-left: 7px #535963 solid;
+  color: #b3c4ca;
+  margin: 0.8em 6px;
+  padding: 0 0.75em;
+}
