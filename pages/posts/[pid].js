@@ -14,7 +14,7 @@ export default function PostPage({ post }) {
 
       <main>
         <Header />
-        <PostDetail key={post.date} pid={post.pid} date={post.date} category={post.category} body={post.body} title={post.title} content={post.content} />
+        <PostDetail key={post.date} pid={post.pid} date={post.date} category={post.category} title={post.title} content={post.content} />
       </main>
 
       <Footer />

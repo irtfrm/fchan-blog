@@ -18,7 +18,7 @@ export default function Home({ posts }) {
         <Header />
 
           {posts.map((p) => {
-            return <Post key={p.date} pid={p.pid} date={p.date} category={p.category} body={p.body} title={p.title} />
+            return <Post key={p.date} pid={p.pid} date={p.date} category={p.category} content={p.content} title={p.title} />
           })}
 
       </main>

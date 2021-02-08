@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import Folder from './icons/Folder'
+import { PostDescription } from './PostDescription'
 
-function Post({ pid, date, category, body, title }) {
+function Post({ pid, date, category, content, title }) {
   return (
     <div className="post">
       <div className="text">
       <Link href={"/posts/"+pid}><h2>{title}</h2></Link>
-        <p>{body.content[0].content[0].value}</p>
+        <p><PostDescription content={content}/></p>
         <div className="info">
           <span>
             {date.substring(0, 10)}
