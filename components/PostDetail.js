@@ -25,7 +25,7 @@ function parseBody(body) {
           color: #d49d54;
           margin: 0 0.4em;
           padding: 0 0.2em;
-          font-family: Monaco;
+          font-family: Monaco, Consolas, 'Courier New', 'Meiryo', 'Osaka-Mono', monospace;
           font-size: 80%;
         }
         .bold {
