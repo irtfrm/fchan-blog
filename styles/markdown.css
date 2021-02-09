@@ -35,24 +35,25 @@
 .markdown a:hover {
   text-decoration: underline;
 }
-.markdown :is(h1, h2, h3, h4, h5, h6) {
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6{
   line-height: 1.25;
   font-weight: bold;
 }
+
 .markdown h1 {
-  margin: 0.9em 5px 0em;
+  margin: 1.5em 5px 0em;
   font-size: 180%;
 }
 .markdown p+h1 {
-  margin: 1.2em 5px 0em;
+  margin: 1.5em 5px 0em;
   font-size: 180%;
 }
 .markdown h2 {
-  margin: 0.5em 5px 0em;
+  margin: 0.5em 5px 0.2em;
   font-size: 155%;
 }
 .markdown p+h2 {
-  margin: 0.8em 5px 0em;
+  margin: 1em 5px 0.2em;
   font-size: 155%;
 }
 .markdown h3 {
