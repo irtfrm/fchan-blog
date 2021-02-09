@@ -1,0 +1,40 @@
+.post {
+    position: relative;
+    margin: 10px;
+    width: 600px;
+    border-radius: 2px;
+    transition: .2s;
+}
+.text {
+    padding: 10px 0 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+.title,
+.info,
+.description {
+    margin: 8px 5px;
+}
+.title {
+    margin-bottom: 0;
+    cursor: pointer;
+    line-height: 1.6;
+}
+.title:hover {
+    text-decoration: underline;
+}
+.info {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 0.8em;
+    color: #9aafb4;
+}
+.center_dot {
+    text-align: center;
+    margin: 0 1em;
+}
+@media screen and (max-width: 700px){
+    .post {
+    width: 95vw;
+    }
+}
