@@ -4,6 +4,14 @@
   --info-txt-color: #9aafb4;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-txt-color: #262330;
+    --main-bg-color: #dce4e1;
+    --info-txt-color: #4d5557;
+  }
+}
+
 html,
 body {
   padding: 0;

@@ -7,6 +7,17 @@
   --quote-bd-color: #535963;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --code-txt-color: #30660c;
+    --code-bg-color: #d4dede;
+    --code-bd-color: #a6babe;
+    --link-txt-color: #4361c4;
+    --quote-txt-color: #4c5f6b;
+    --quote-bd-color: #617f97;
+  }
+}
+
 .markdown code {
   border-radius: 2px;
   color: var(--code-txt-color);
