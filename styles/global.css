@@ -1,9 +1,15 @@
+:root {
+  --main-txt-color: #dce4e1;
+  --main-bg-color: #262330;
+  --info-txt-color: #9aafb4;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  color: #dce4e1;
-  background: #262330;
+  color: var(--main-txt-color);
+  background: var(--main-bg-color);
   line-height: 1.9;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
 }

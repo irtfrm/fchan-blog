@@ -1,13 +1,22 @@
+:root {
+  --code-txt-color: #ce9178;
+  --code-bg-color: #1e1e1e;
+  --code-bd-color: #37393a;
+  --link-txt-color: #72c1e0;
+  --quote-txt-color: #b3c4ca;
+  --quote-bd-color: #535963;
+}
+
 .markdown code {
   border-radius: 2px;
-  color: #ce9178;
+  color: var(--code-txt-color);
   font-family: Menlo, Monaco, Consolas, "Andale Mono", "Ubuntu Mono", "Courier New", "Meiryo", "Osaka-Mono", monospace;
   font-size: 80%;
 }
 
 :not(pre)>code {
-  background: #1e1e1e;
-  border: 1px solid #37393a;
+  background: var(--code-bg-color);
+  border: 1px solid var(--code-bd-color);
   margin: 0 0.1em;
   padding: 0.15em 0.25em;
   vertical-align: 0.1em;
@@ -28,7 +37,7 @@
   margin: 0.5em 5px 0.8em;
 }
 .markdown a {
-  color: #72c1e0;
+  color: var(--link-txt-color);
   text-decoration: none;
   font-weight: bold;
 }
@@ -65,8 +74,8 @@
   font-size: 115%;
 }
 .markdown blockquote {
-  border-left: 7px #535963 solid;
-  color: #b3c4ca;
+  border-left: 7px var(--quote-bd-color) solid;
+  color: var(--quote-txt-color);
   margin: 0.8em 6px;
   padding: 0 0.75em;
 }

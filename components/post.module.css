@@ -27,7 +27,7 @@
     margin-top: 0;
     margin-bottom: 16px;
     font-size: 0.8em;
-    color: #9aafb4;
+    color: var(--info-txt-color);
 }
 .center_dot {
     text-align: center;
