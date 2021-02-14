@@ -10,8 +10,8 @@
 @media (prefers-color-scheme: light) {
   :root {
     --code-txt-color: #30660c;
-    --code-bg-color: #d4dede;
-    --code-bd-color: #a6babe;
+    --code-bg-color: #dce4e1;
+    --code-bd-color: #c6d3d3;
     --link-txt-color: #4361c4;
     --quote-txt-color: #4c5f6b;
     --quote-bd-color: #617f97;
