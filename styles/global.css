@@ -19,6 +19,7 @@ body {
   color: var(--main-txt-color);
   background: var(--main-bg-color);
   line-height: 1.9;
+  font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 
