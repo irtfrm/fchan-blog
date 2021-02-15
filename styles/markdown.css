@@ -62,6 +62,7 @@
 
 .markdown h1 {
   margin: 1.5em 5px 0em;
+  border-bottom: solid 1px;
   font-size: 180%;
 }
 .markdown p+h1 {
@@ -69,7 +70,7 @@
   font-size: 180%;
 }
 .markdown h2 {
-  margin: 0.5em 5px 0.2em;
+  margin: 0.75em 5px 0.2em;
   font-size: 155%;
 }
 .markdown p+h2 {
