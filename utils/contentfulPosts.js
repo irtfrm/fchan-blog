@@ -21,11 +21,11 @@ export async function fetchNewPosts() {
   console.log(`Error getting Entries for ${contentType.name}.`)
 }
 
-export async function fetchPostByPid(pid) {
+export async function fetchPostById(id) {
   const entries = await client.getEntries({
     content_type: "posts",
     limit: 1,
-    "fields.pid": pid,
+    "sys.id": id,
   });
   if (entries.items) {
     return entries.items[0];

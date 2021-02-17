@@ -11,14 +11,14 @@ export default function Home({ posts }) {
     <div className="container">
       <Head>
         <title>fchan.dev</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
       </Head>
 
       <main>
         <Header />
 
           {posts.map((p) => {
-            return <Post key={p.date} pid={p.pid} date={p.date} category={p.category} body={p.body} title={p.title} />
+            return <Post key={p.date} pid={p.id} date={p.createdAt} category={p.category} content={p.content} title={p.title} />
           })}
 
       </main>
@@ -31,7 +31,10 @@ export default function Home({ posts }) {
 export async function getStaticProps() {
   const res = await fetchNewPosts()
   const posts = await res.map((p) => {
-    return p.fields
+    let fld = p.fields;
+    fld['createdAt'] = p.sys.createdAt
+    fld['id'] = p.sys.id
+    return fld
   })
 
   return {

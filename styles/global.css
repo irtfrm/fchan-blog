@@ -1,12 +1,26 @@
+:root {
+  --main-txt-color: #dce4e1;
+  --main-bg-color: #262330;
+  --info-txt-color: #9aafb4;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-txt-color: #262330;
+    --main-bg-color: #eaeeec;
+    --info-txt-color: #4d5557;
+  }
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  color: #dce4e1;
-  background: #262330;
+  color: var(--main-txt-color);
+  background: var(--main-bg-color);
   line-height: 1.9;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 
 * {
@@ -18,8 +32,15 @@ body {
 }
 
 main {
-    padding: 1rem 0;
+    padding: 1rem 0 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media screen and (max-width: 700px){
+  html,
+  body {
+    font-size: 17px;
+  }
 }
