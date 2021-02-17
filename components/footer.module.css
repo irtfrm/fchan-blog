@@ -1,8 +1,22 @@
 .footer {
     width: 100%;
-    height: 86px;
+    height: 120px;
     font-size: 86%;
     display: flex;
-    justify-content: center;
+    justify-content: normal;
     align-items: center;
+    flex-direction: column;
+}
+
+.icon {
+    color: inherit;
+    margin: 0 2px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.icon_container {
+    display: inline;
+    margin-bottom: 5px;
 }
