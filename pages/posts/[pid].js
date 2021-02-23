@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import ShareButtons from '@components/ShareButtons'
 import PostDetail from '@components/PostDetail'
 import { fetchPosts, fetchPostById } from '@utils/contentfulPosts'
 
@@ -12,9 +13,10 @@ export default function PostPage({ post }) {
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Head>
 
+      <Header />
       <main>
-        <Header />
         <PostDetail key={post.date} pid={post.id} date={post.createdAt} category={post.category} title={post.title} content={post.content} />
+        <ShareButtons pid={post.id}/>
       </main>
 
       <Footer />
