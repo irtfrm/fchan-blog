@@ -10,10 +10,20 @@
 
 .icon {
     color: inherit;
-    margin: 0 2px;
+    margin: 0 3px;
     font-weight: bold;
     text-decoration: none;
     font-size: 1.3em;
+}
+
+@media screen and (min-width: 701px){
+    .icons>svg {
+        transition-duration: .2s;
+    }
+
+    .icon>svg:hover {
+        transform: scale(1.15);
+    }
 }
 
 .icon_container {
