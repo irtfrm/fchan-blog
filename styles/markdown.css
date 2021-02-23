@@ -45,7 +45,7 @@
 }
 
 .markdown p {
-  margin: 0.5em 5px 0.8em;
+  margin: 0.5em 0 0.8em;
 }
 .markdown a {
   color: var(--link-txt-color);
@@ -61,28 +61,28 @@
 }
 
 .markdown h1 {
-  margin: 1.5em 5px 0em;
+  margin: 1.5em 0 0em;
   border-bottom: solid 1px;
   font-size: 180%;
 }
 .markdown p+h1 {
-  margin: 1.5em 5px 0em;
+  margin: 1.5em 0 0em;
   font-size: 180%;
 }
 .markdown h2 {
-  margin: 0.75em 5px 0.2em;
+  margin: 0.75em 0 0.2em;
   font-size: 155%;
 }
 .markdown p+h2 {
-  margin: 1em 5px 0.2em;
+  margin: 1em 0 0.2em;
   font-size: 155%;
 }
 .markdown h3 {
-  margin: 0.5em 5px 0em;
+  margin: 0.5em 0 0em;
   font-size: 134%;
 }
 .markdown h4 {
-  margin: 0.5em 5px 0em;
+  margin: 0.5em 0 0em;
   font-size: 115%;
 }
 .markdown blockquote {

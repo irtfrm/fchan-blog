@@ -12,7 +12,7 @@ export default function Footer() {
           <a target="_blank" className={styles.icon} href="https://github.com/irtfrm"><GitHub/> </a>
           <a target="_blank" className={styles.icon} href="https://www.linkedin.com/in/tomoya-furukawa-0ba37a203/"><LinkedIn/> </a>
         </div>
-        <div>
+        <div className={styles.credit}>
         ©{new Date().getFullYear()} Tomoya Furukawa
         </div>
       </footer>
