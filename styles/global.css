@@ -8,8 +8,8 @@
 @media (prefers-color-scheme: light) {
   :root {
     --main-txt-color: #262330;
-    --main-bg-color: #eaeeec;
-    --info-txt-color: #62686a;
+    --main-bg-color: #f1f3f1;
+    --info-txt-color: #7b8489;
     --lighter-txt-color: #a0a7a6;
   }
 }

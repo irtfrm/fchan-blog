@@ -6,7 +6,7 @@
     justify-content: normal;
     align-items: center;
     flex-direction: column;
-    color: var(--info-txt-color);
+    color: var(--lighter-txt-color);
 }
 
 .icon {
@@ -15,16 +15,12 @@
     font-weight: bold;
     text-decoration: none;
     font-size: 1.3em;
-}
-
-.credit {
-    color: var(--main-txt-color);
+    color: var(--lighter-txt-color);
 }
 
 @media screen and (min-width: 701px){
-    .icons>svg {
-        color: inherit;
-        transition-duration: color ease .2s;
+    .icon>svg {
+        transition: color ease .1s;
     }
 
     .icon>svg:hover {
