@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-import ShareButtons from '@components/ShareButtons'
+//import ShareButtons from '@components/ShareButtons'
 import PostDetail from '@components/PostDetail'
 import { fetchPosts, fetchPostById } from '@utils/contentfulPosts'
 
