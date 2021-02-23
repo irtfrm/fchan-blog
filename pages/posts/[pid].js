@@ -16,7 +16,7 @@ export default function PostPage({ post }) {
       <Header />
       <main>
         <PostDetail key={post.date} pid={post.id} date={post.createdAt} category={post.category} title={post.title} content={post.content} />
-        <ShareButtons pid={post.id}/>
+        {/* <ShareButtons pid={post.id}/> */}
       </main>
 
       <Footer />
