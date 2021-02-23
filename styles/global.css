@@ -2,6 +2,7 @@
   --main-txt-color: #dce4e1;
   --main-bg-color: #262330;
   --info-txt-color: #9aafb4;
+  --lighter-txt-color: #687175;
 }
 
 @media (prefers-color-scheme: light) {
@@ -9,6 +10,7 @@
     --main-txt-color: #262330;
     --main-bg-color: #eaeeec;
     --info-txt-color: #4d5557;
+    --lighter-txt-color: #687175;
   }
 }
 
@@ -36,6 +38,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+article {
+  padding: 0 0 3rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 700px){

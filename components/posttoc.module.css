@@ -1,0 +1,28 @@
+.toc_ul {
+    padding: 0;
+    margin: 0; margin-top: 10px;
+    position: sticky;
+    top: 70px;
+    font-size: .86em;
+    max-width: 200px;
+    min-width: 100px;
+}
+
+.toc_li::marker {
+    content: "";
+}
+
+.toc_li+.toc_li {
+    margin-top: .3em;
+}
+
+.toc_a {
+    color: var(--lighter-txt-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color ease .1s;
+}
+
+.toc_a:hover {
+    color: var(--main-txt-color);
+}
