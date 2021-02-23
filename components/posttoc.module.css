@@ -11,8 +11,11 @@
     content: "";
 }
 
+.toc_li {
+    line-height: 1.5em;
+}
 .toc_li+.toc_li {
-    margin-top: .3em;
+    margin-top: .75em;
 }
 
 .toc_a {

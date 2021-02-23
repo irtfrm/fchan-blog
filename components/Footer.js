@@ -6,7 +6,7 @@ import Mail from './icons/Mail'
 export default function Footer() {
   return (
       <footer className={styles.footer}>
-      <div>CONTACT ME</div>
+      <div className={styles.contact}>LINKS</div>
         <div className={styles.icon_container}>
           <a target="_blank" className={styles.icon} href="mailto:frm.tomoya@gmail.com"><Mail/> </a>
           <a target="_blank" className={styles.icon} href="https://github.com/irtfrm"><GitHub/> </a>
