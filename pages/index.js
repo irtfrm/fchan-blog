@@ -14,8 +14,8 @@ export default function Home({ posts }) {
         <link rel="icon" type="image/svg+xml" href="favicon.svg" />
       </Head>
 
+      <Header />
       <main>
-        <Header />
 
           {posts.map((p) => {
             return <Post key={p.date} pid={p.id} date={p.createdAt} category={p.category} content={p.content} title={p.title} />
