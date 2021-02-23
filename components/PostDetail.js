@@ -4,7 +4,7 @@ import { PostContent } from './PostContent';
 import styles from './post.module.css'
 import {getReadingTimeFromMarkdown} from '@utils/post'
 import HourGlass from './icons/HourGlass';
-import Calender from './icons/Calender';
+import Calendar from './icons/Calendar';
 
 function PostDetail({ pid, date, category, title, content }) {
   return (
@@ -13,7 +13,7 @@ function PostDetail({ pid, date, category, title, content }) {
       <Link href={"/posts/"+pid}><h2 className={styles.title}>{title}</h2></Link>
       <div className={styles.info}>
           <span>
-            <Calender/>
+            <Calendar/>
             {date.substring(0, 10)}
           </span>
           <span className={styles.center_dot}>&middot;</span>
