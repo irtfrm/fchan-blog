@@ -31,6 +31,7 @@
 .center_dot {
     text-align: center;
     margin: 0 1em;
+    user-select: none;
 }
 @media screen and (max-width: 900px){
     .post {
