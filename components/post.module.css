@@ -33,6 +33,31 @@
     margin: 0 1em;
     user-select: none;
 }
+
+.share_links {
+    margin-top: 3em;
+    padding: 1em;
+    display: flex;
+    border-radius: 4px;
+    justify-content: flex-end;
+    background-color: #2d2e38;
+}
+.share_link {
+    font-size: 1.15em;
+}
+.share_link+.share_link{
+    margin-right: .5em;
+    color: var(--lighter-txt-color);
+    transition: color ease .1s;
+}
+.share_link+.share_link:hover{
+    color: var(--main-txt-color);
+}
+.share_link:first-child {
+    font-weight: bold;
+    margin-right: auto;
+}
+
 @media screen and (max-width: 900px){
     .post {
         width: 600px;
