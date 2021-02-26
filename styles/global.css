@@ -3,6 +3,7 @@
   --main-bg-color: #262330;
   --info-txt-color: #9aafb4;
   --lighter-txt-color: #687175;
+  --light-bg-color: #2d2e38;
 }
 
 @media (prefers-color-scheme: light) {
@@ -11,7 +12,8 @@
     --main-bg-color: #f1f3f1;
     --info-txt-color: #7b8489;
     --lighter-txt-color: #a0a7a6;
-  }
+    --light-bg-color: #e3e7e6;
+}
 }
 
 html,
