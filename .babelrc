@@ -1,0 +1,35 @@
+// .babelrc
+{
+    "presets": ["next/babel"],
+    "plugins": [
+      [
+        "prismjs",
+        {
+          "languages": [
+            "javascript",
+            "css",
+            "markup",
+            "bash",
+            "diff",
+            "docker",
+            "go",
+            "graphql",
+            "ignore",
+            "json",
+            "markdown",
+            "python",
+            "jsx",
+            "tsx",
+            "regex",
+            "sql",
+            "typescript",
+            "yaml",
+            "rust",
+            "nasm"
+          ],
+          "plugins": [],
+          "theme": "tomorrow"
+        }
+      ]
+    ]
+  }
