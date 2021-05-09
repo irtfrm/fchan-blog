@@ -2,8 +2,11 @@ import styles from './posttoc.module.css'
 
 function parse_h1(markdown) {
     let headlines = [];
+    let is_code_mode = false;
     for(const row of markdown.split("\n")){
-        if(row.trim().slice(0, 2)==="# ")
+        if(row.match(/```/))
+            is_code_mode = !is_code_mode;
+        else if(!is_code_mode && row.trim().slice(0, 2)==="# ")
             headlines.push(row.slice(2).trim());
     }
     return headlines;

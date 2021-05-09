@@ -9,9 +9,9 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --code-txt-color: #30660c;
-    --code-bg-color: #E4E8E7;
-    --code-bd-color: #c6d3d3;
+    --code-txt-color: #248b5b;
+    --code-bg-color: #eff2f3;
+    --code-bd-color: #d2dfdf;
     --link-txt-color: #3271b9;
     --quote-txt-color: #4c5f6b;
     --quote-bd-color: #617f97;
@@ -93,5 +93,6 @@
 }
 
 .markdown img {
-  width: 100%
+  width: 100%;
+  margin: 0.75em 0;
 }
