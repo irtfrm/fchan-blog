@@ -15,5 +15,5 @@
     position: sticky;
     top: -1px;
     z-index: 99;
-    background-color: rgba(38,35,48,.9);
+    background-color: var(--header-bg-color);
 }
