@@ -27,11 +27,11 @@
     margin-bottom: 16px;
     font-size: 0.8em;
     color: var(--info-txt-color);
+    display: flex;
 }
-.center_dot {
-    text-align: center;
-    margin: 0 1em;
-    user-select: none;
+
+.info_element + .info_element {
+    margin-left: .5em;
 }
 
 @media screen and (max-width: 900px){
