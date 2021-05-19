@@ -1,10 +1,7 @@
 import Link from 'next/link'
-import Folder from './icons/Folder'
 import { PostContent } from './PostContent';
 import styles from './post.module.css'
 import {getReadingTimeFromMarkdown} from '@utils/post'
-import HourGlass from './icons/HourGlass';
-import Calendar from './icons/Calendar';
 import ShareButtons from './ShareButtons';
 import PostInfo from './PostInfo';
 
