@@ -5,7 +5,6 @@
     top: 70px;
     font-size: .86em;
     width: 240px;
-    border-left: solid 7px var(--code-bd-color);
 }
 
 .toc_li::marker {

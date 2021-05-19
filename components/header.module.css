@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     position: sticky;
-    top: 0px;
+    top: -1px;
     z-index: 99;
-    backdrop-filter: blur(60px);
+    background-color: rgba(38,35,48,.9);
 }

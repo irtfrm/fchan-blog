@@ -1,16 +1,13 @@
 .share_links {
-    margin-top: 3em;
-    padding: 1em;
+    margin-top: 2em;
     display: flex;
-    border-radius: 4px;
     justify-content: flex-end;
-    background-color: var(--light-bg-color);
 }
 .share_link {
     font-size: 1.15em;
 }
 .share_link+.share_link{
-    margin-right: .5em;
+    margin-left: .5em;
     color: var(--lighter-txt-color);
     transition: color ease .1s;
 }
