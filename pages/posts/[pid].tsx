@@ -17,10 +17,10 @@ export default function PostPage({ post }) {
       <Header />
       <article>
         <PostDetail key={post.date} pid={post.id} date={post.createdAt} category={post.category} title={post.title} content={post.content} />
-        <side>
+        <aside>
           <PostTOC content={post.content}/>
           <div></div>
-        </side>
+        </aside>
         {/* <ShareButtons pid={post.id}/> */}
       </article>
 
