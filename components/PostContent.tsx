@@ -1,5 +1,6 @@
 import Markdown from 'markdown-to-jsx'
 import React, { useEffect } from 'react'
+import Prism from 'prismjs'
 
 export const PostContent = ({ content }) => {
   useEffect(() => {
